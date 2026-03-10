@@ -14,7 +14,7 @@
   <h1>Your Cart</h1>
   <div id="cart-items"></div>
   <p>Total: $<span id="total">0</span></p>
-  <button onclick="checkout()">Proceed to Payment</button>
+  <button id="cartButton" onclick="checkout()">Proceed to Payment</button>
   <script>
     // Check if user is logged in
     if (!localStorage.getItem('loggedInUser')) {
@@ -39,6 +39,7 @@
       loadCart();
     }
     function checkout() {
+      alert('your amount is $' + document.getElementById('total').textContent);
       window.location.href = '/payment';
     }
     loadCart();

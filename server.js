@@ -1,5 +1,4 @@
 const express = require('express');
-const { use } = require('react');
 const app = express();
 const port = 3004;
 
@@ -42,8 +41,8 @@ app.get('/signup', (req, res) => {
 });
 
 app.post('/signup', (req, res) => {
-    use = req.body.username;
-    pass = req.body.password;
+    let use = req.body.username;
+    let pass = req.body.password;
     if (use === "vinayksgowda123@gmail.com" && pass === "vinay@123") {
         res.redirect('/home');
     } else {

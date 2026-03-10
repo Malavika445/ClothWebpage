@@ -13,23 +13,23 @@
 <body>
   <h1>Welcome to Cloth Shop</h1>
   <nav>
-    <a href="#" onclick="logout()">Logout</a> | <a href="/cart">Cart</a>
+    <a href="#" onclick="logout()">Logout</a> | <a id="cartLink" href="/cart">Cart</a>
   </nav>
   <h2>Available Clothes</h2>
   <div class="cloth">
     <h3>T-Shirt</h3>
     <p>Price: $20</p>
-    <button onclick="addToCart('T-Shirt', 20)">Add to Cart</button>
+    <button id="tshirtButton" onclick="addToCart('T-Shirt', 20)">Add to Cart</button>
   </div>
   <div class="cloth">
     <h3>Jeans</h3>
     <p>Price: $50</p>
-    <button onclick="addToCart('Jeans', 50)">Add to Cart</button>
+    <button id="jeansButton" onclick="addToCart('Jeans', 50)">Add to Cart</button>
   </div>
   <div class="cloth">
     <h3>Jacket</h3>
     <p>Price: $80</p>
-    <button onclick="addToCart('Jacket', 80)">Add to Cart</button>
+    <button id="jacketButton" onclick="addToCart('Jacket', 80)">Add to Cart</button>
   </div>
   <script>
     // Check if user is logged in
